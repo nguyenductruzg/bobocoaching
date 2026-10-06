@@ -126,11 +126,11 @@ footer .btns{margin-bottom:16px}
   <header class="hero">
     <div class="ring"><img class="avatar" src="bobo_av.png" alt="Logo BoboCoach" width="132" height="132"></div>
     <h1>BoboCoach</h1>
-    <p class="tag">Huấn luyện viên cá nhân. Lộ trình riêng để tăng cơ và giảm mỡ.</p>
+    <p class="tag">Khách hàng của tôi sẽ chạm đến đỉnh cao của họ.</p>
     <div class="stats">
-    <div><b>5+</b><span>năm kinh nghiệm</span></div>
-    <div><b>100+</b><span>học viên đã tập</span></div>
-    <div><b>1-1</b><span>theo sát từng buổi</span></div>
+    <div><b>5+</b><span>Năm kinh nghiệm</span></div>
+    <div><b>50+</b><span>Học viên đã tập</span></div>
+    <div><b>1-1</b><span>Theo sát từng buổi</span></div>
   </div>
     <div class="btns three">
       <a class="btn soft" id="fb" href="#">Facebook</a>
@@ -167,7 +167,7 @@ footer .btns{margin-bottom:16px}
     </div>
     <div class="blk">
       <h2>Quyền lợi chi tiết</h2>
-      <p class="sub">So sánh quyền lợi giữa các gói. Vuốt ngang nếu bảng rộng hơn màn hình.</p>
+      <p class="sub">So sánh quyền lợi giữa các gói.</p>
       <div class="bt-wrap" style="margin-top:0"><table class="bt" id="bt"></table></div>
     </div>
     <div class="blk">
@@ -228,16 +228,7 @@ const CONFIG = {
     { icon: "🔄", text: "Buổi chưa sử dụng được bảo lưu và tiếp tục ở tháng sau" }
   ],
   /* Bảng thêm bằng nút "+ Thêm bảng" (mở trang với ?admin). Sau khi sao chép mã, dán thay toàn bộ khối extraTables này. */
-  extraTables: [
-    { title: "Nhóm 1:2", cols: ["Hạng mục", "Chi tiết"], rows: [
-      ["Hình thức", "1 PT : 2 học viên"],
-      ["Số buổi", "30 buổi"],
-      ["Học phí cả nhóm", "13.000.000đ"],
-      ["Giá mỗi buổi", "~217.000đ/người/buổi"],
-      ["Thời gian sử dụng", "Gói tháng, không giới hạn thời gian"],
-      ["Bảo lưu", "Buổi chưa dùng được bảo lưu sang tháng sau"]
-    ] }
-  ],
+
   /* Bảng quyền lợi: cột là các gói ở mục packages (theo đúng thứ tự). Mỗi dòng gồm tên quyền lợi và
      values cho từng gói: true = có (dấu ✓), false = không (dấu -), hoặc chữ như "12 buổi". */
   benefits: [
@@ -261,11 +252,15 @@ const CONFIG = {
     { gender: "nu", cat: "giammo", imgs: ["", "", "", ""], name: "Học viên H", note: "-5kg mỡ sau 2 tháng" }
   ],
   packages: [
-    { name: "PT 1-1 tại phòng tập", price: "2.400.000đ", per: "/ 12 buổi", hot: true,
+    { name: "PT 1-1 tại phòng tập", price: "5.00.000đ", per: "/ 12 buổi (~417.000đ/buổi)", hot: true,
       perks: ["Giáo án riêng theo mục tiêu", "Sửa form từng động tác", "Gợi ý thực đơn cơ bản"] },
-    { name: "Coaching online", price: "1.200.000đ", per: "/ tháng",
+    { name: "PT 1-1 tại phòng tập", price: "8.00.000đ", per: "/ 24 buổi (~333.000đ/buổi)", hot: true,
+      perks: ["Giáo án riêng theo mục tiêu", "Sửa form từng động tác", "Gợi ý thực đơn cơ bản"] },
+    { name: "PT 1-2 tại phòng tập", price: "13.00.000đ", per: "/ 30 buổi (~217.000đ/buổi)", hot: true,
+      perks: ["Giáo án riêng theo mục tiêu", "Sửa form từng động tác", "Gợi ý thực đơn cơ bản"] },
+    { name: "Coaching online", price: "8.000.000đ", per: "3 Block/~4 tháng",
       perks: ["Lên giáo án hằng tuần", "Check form qua video", "Nhắn tin hỏi đáp mỗi ngày"] },
-    { name: "Nhóm nhỏ 3-4 người", price: "1.500.000đ", per: "/ 12 buổi",
+    { name: "Nhóm nhỏ 3-4 người", price: "18.000.000đ", per: "/ 30 buổi (~200.000đ/buổi",
       perks: ["Tập chung, giá mềm hơn", "Có bạn tập cùng, dễ duy trì"] }
   ]
 };

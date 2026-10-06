@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BoboCoach - Huấn luyện viên cá nhân</title>
+<meta name="description" content="BoboCoach - PT 1-1, online và nhóm nhỏ. Nhắn Zalo để được tư vấn lộ trình miễn phí.">
+<link rel="icon" type="image/png" href="bobo_av.png">
+<meta property="og:title" content="BoboCoach - Huấn luyện viên cá nhân">
+<meta property="og:image" content="https://nguyenductruzg.github.io/bobocoach/bobo_av.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f4;--ink:#1b2a41;--mute:#5b6a80;--card:#fff;--line:#d6dce4;--acc:#e4572e;--acc-ink:#fff;--scrim:rgba(238,241,244,.8)}
+@media (prefers-color-scheme:dark){:root{--bg:#121a28;--ink:#eef1f4;--mute:#9aa8bd;--card:#1b2638;--line:#2c3a52;--acc:#ff6b3d;--acc-ink:#121a28;--scrim:rgba(18,26,40,.74)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Be Vietnam Pro",system-ui,sans-serif;line-height:1.55}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(var(--scrim),var(--scrim)),url(bg.jpg) center/cover no-repeat}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.hero{padding:32px 0 8px;text-align:center}
+.ring{width:132px;height:132px;margin:0 auto 16px;padding:4px;border-radius:50%;background:linear-gradient(135deg,var(--acc),#ffb347)}
+.avatar{width:100%;height:100%;border-radius:50%;border:4px solid var(--bg);background:#000;display:block;object-fit:cover}
+.hero .stats{margin:18px 0}
+.btns.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px}
+.btns.two .btn{text-align:center;padding:14px 10px}
+.btns.three{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
+.btns.three .btn{text-align:center;padding:14px 6px}
+.btn.dark{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn.soft{background:var(--card);border-color:var(--line);color:var(--ink)}
+.bar{display:flex;align-items:center;height:22px;margin-bottom:28px}
+.bar i{display:block;background:var(--ink);border-radius:3px}
+.bar .p1{width:14px;height:22px}.bar .p2{width:10px;height:16px;margin-left:3px}
+.bar .rod{flex:1;height:5px;border-radius:0}
+.bar .p2.r{margin:0 3px 0 0}
+.bar .p1.red{background:var(--acc)}
+h1{font-size:clamp(2.2rem,10vw,3.2rem);font-weight:900;line-height:1;letter-spacing:-.03em;margin:0 0 8px}
+.tag{font-size:1.05rem;color:var(--mute);max-width:26em;margin:0 auto}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 22px;border-radius:10px;font-weight:800;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-block:2px solid var(--ink);margin:12px 0 44px}
+.stats div{padding:16px 8px;text-align:center}
+.stats div+div{border-left:1px solid var(--line)}
+.stats b{display:block;font-size:1.8rem;font-weight:900}
+.stats span{font-size:.85rem;color:var(--mute)}
+h2{font-size:1.6rem;font-weight:800;margin:0 0 6px}
+.sub{color:var(--mute);margin:0 0 20px}
+.pk{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:14px}
+.pk.hot{border:2px solid var(--acc)}
+.pk h3{margin:0;font-size:1.2rem}
+.price{font-size:1.5rem;font-weight:900;color:var(--acc);margin:4px 0 10px}
+.price small{font-size:.85rem;color:var(--mute);font-weight:400}
+.pk ul{margin:0 0 16px;padding-left:20px;color:var(--mute)}
+.pk .btn{padding:10px 18px;font-size:.95rem}
+.tabs{display:flex;align-items:center;gap:10px;overflow-x:auto;padding:10px 0;margin-bottom:18px;scrollbar-width:none;position:sticky;top:0;background:var(--scrim);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:5}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;padding:10px 20px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--mute);font:inherit;font-weight:600;cursor:pointer}
+.tab[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.gender{display:grid;grid-template-columns:1fr 1fr;border:2px solid var(--ink);border-radius:12px;overflow:hidden;margin-bottom:8px}
+.g{padding:14px;border:0;background:transparent;color:var(--ink);font:inherit;font-weight:800;font-size:1.1rem;cursor:pointer}
+.g+.g{border-left:2px solid var(--ink)}
+.g[aria-selected=true]{background:var(--acc);color:var(--acc-ink)}
+.sep{flex:none;width:1px;height:26px;background:var(--line);margin:0 4px}
+.res{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:44px}
+@media (max-width:640px){.res{grid-template-columns:repeat(2,1fr)}}
+.ph{margin:0}
+.ph .img{aspect-ratio:3/4;border:2px dashed var(--line);border-radius:12px;display:grid;place-items:center;text-align:center;color:var(--mute);font-size:.9rem;padding:10px;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph figcaption{font-size:.9rem;margin-top:8px}
+.ph figcaption b{color:var(--acc)}
+.fcard{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+.collage{display:grid;grid-template-columns:1fr 1fr;aspect-ratio:1.15;background:var(--line);gap:1px}
+.collage button,.collage .empty{padding:0;border:0;background:var(--bg);cursor:pointer;display:block;overflow:hidden;min-height:0}
+.collage .empty{cursor:default}
+.collage img{width:100%;height:100%;object-fit:cover;display:block}
+.fcard .cap{padding:12px 8px;text-align:center;font-weight:800;font-size:.85rem;border-top:1px solid var(--line)}
+.fcard .cap b{display:block;color:var(--acc)}
+.fcard .cap small{display:block;font-weight:400;color:var(--mute);margin-top:2px}
+#lb{border:0;padding:0;background:transparent;max-width:92vw;max-height:92vh}
+#lb::backdrop{background:rgba(0,0,0,.8)}
+#lb img{max-width:92vw;max-height:88vh;border-radius:10px;display:block}
+.bt-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);margin-top:28px}
+.bt{width:100%;border-collapse:collapse;min-width:520px;font-size:.92rem}
+.bt th,.bt td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:center}
+.bt thead th{background:var(--ink);color:var(--bg);font-weight:800}
+.bt th:first-child,.bt td:first-child{text-align:left;font-weight:600;position:sticky;left:0;background:var(--card);color:var(--ink)}
+.bt thead th:first-child{background:var(--ink);color:var(--bg)}
+.bt tbody tr:last-child td{border-bottom:0}
+.bt .yes{color:var(--acc);font-weight:900;font-size:1.1rem}
+.bt .no{color:var(--mute)}
+.blk{margin-bottom:40px}
+.chk{list-style:none;margin:0;padding:18px;border:1.5px solid var(--ink);border-radius:16px;background:var(--card);display:grid;gap:14px}
+.chk li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+.chk li::before{content:"✓";display:grid;place-items:center;width:26px;height:26px;border-radius:50%;border:2px solid var(--acc);color:var(--acc);font-weight:900;font-size:.85rem}
+.chk em{font-style:normal;font-weight:700;color:var(--acc)}
+.path{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media (max-width:640px){.path{grid-template-columns:1fr}}
+.path div{border:1.5px solid var(--ink);border-radius:14px;background:var(--card);padding:16px}
+.path span{font-size:1.8rem;display:block;margin-bottom:6px}
+.path p{margin:0}
+.xt{margin-bottom:36px}
+.xt-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.xt h3{margin:0;font-size:1.3rem}
+.draft{font-size:.7rem;font-weight:600;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:2px 8px;vertical-align:middle}
+.del{border:1px solid var(--line);background:var(--card);color:var(--mute);border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer}
+.xt .bt-wrap{margin-top:12px}
+.adminbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:8px 0 24px;padding:14px;border:2px dashed var(--acc);border-radius:12px}
+.adminbar p{flex-basis:100%;margin:0;color:var(--mute);font-size:.85rem}
+button.btn{font:inherit;font-weight:800;cursor:pointer}
+#td{border:2px solid var(--ink);border-radius:16px;padding:0;background:var(--card);color:var(--ink);width:min(92vw,520px)}
+#td::backdrop{background:rgba(0,0,0,.6)}
+.tdbox{padding:20px;display:grid;gap:12px}
+.tdbox h3{margin:0}
+.tdbox label{display:grid;gap:6px;font-weight:600;font-size:.9rem}
+.tdbox input,.tdbox textarea{font:inherit;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+[hidden]{display:none!important}
+section{margin-bottom:44px}
+footer{border-top:2px solid var(--ink);padding:28px 0 48px;color:var(--mute);font-size:.9rem}
+footer .btns{margin-bottom:16px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div class="ring"><img class="avatar" src="bobo_av.png" alt="Logo BoboCoach" width="132" height="132"></div>
+    <h1>BoboCoach</h1>
+    <p class="tag">Huấn luyện viên cá nhân. Lộ trình riêng để tăng cơ và giảm mỡ.</p>
+    <div class="stats">
+    <div><b>5+</b><span>năm kinh nghiệm</span></div>
+    <div><b>100+</b><span>học viên đã tập</span></div>
+    <div><b>1-1</b><span>theo sát từng buổi</span></div>
+  </div>
+    <div class="btns three">
+      <a class="btn soft" id="fb" href="#">Facebook</a>
+      <a class="btn soft" id="ig" href="#">Instagram</a>
+      <a class="btn dark" id="zalo" href="#">Zalo</a>
+    </div>
+  </header>
+
+<div class="gender" id="gender" role="tablist" aria-label="Giới tính">
+    <button class="g" role="tab" data-g="nam" aria-selected="true">Nam</button>
+    <button class="g" role="tab" data-g="nu" aria-selected="false">Nữ</button>
+  </div>
+
+  <nav class="tabs" role="tablist" aria-label="Danh mục">
+    <button class="tab" role="tab" data-tab="all" aria-selected="true">Tất cả</button>
+    <button class="tab" role="tab" data-tab="tangco" aria-selected="false">Tăng cơ</button>
+    <button class="tab" role="tab" data-tab="giammo" aria-selected="false">Giảm mỡ</button>
+    <span class="sep" aria-hidden="true"></span>
+    <button class="tab" role="tab" data-tab="hocphi" aria-selected="false">Học phí</button>
+  </nav>
+
+  <section id="results">
+    <h2 id="res-title">Kết quả học viên</h2>
+    <p class="sub">Bấm vào ảnh để xem rõ hơn.</p>
+    <div class="res" id="res"></div>
+  </section>
+
+  <dialog id="lb" aria-label="Xem ảnh feedback"><img alt="Feedback học viên"></dialog>
+
+  <section id="fees" hidden>
+    <div class="blk">
+      <h2>Nội dung coaching</h2>
+      <ul class="chk" id="inc"></ul>
+    </div>
+    <div class="blk">
+      <h2>Quyền lợi chi tiết</h2>
+      <p class="sub">So sánh quyền lợi giữa các gói. Vuốt ngang nếu bảng rộng hơn màn hình.</p>
+      <div class="bt-wrap" style="margin-top:0"><table class="bt" id="bt"></table></div>
+    </div>
+    <div class="blk">
+      <h2>Lộ trình cá nhân hóa</h2>
+      <div class="path" id="path"></div>
+    </div>
+    <div class="blk">
+      <h2>Bảng giá</h2>
+      <p class="sub">Giá tham khảo. Nhắn Zalo để được tư vấn gói phù hợp.</p>
+      <div id="packs"></div>
+    </div>
+    <div id="extras"></div>
+    <div class="adminbar" id="adminbar" hidden>
+      <button class="btn dark" id="addTable">+ Thêm bảng</button>
+      <button class="btn soft" id="copyCode">Sao chép mã bảng</button>
+      <p>Chế độ chỉnh sửa. Bảng bạn thêm chỉ hiện trên máy bạn. Muốn mọi người thấy, bấm "Sao chép mã bảng" rồi thay khối extraTables trong index.html.</p>
+    </div>
+  </section>
+
+  <dialog id="td" aria-label="Thêm bảng">
+    <div class="tdbox">
+      <h3>Thêm bảng mới</h3>
+      <label>Tiêu đề bảng<input id="tdTitle" placeholder="Ví dụ: Chính sách bảo lưu"></label>
+      <label>Tên các cột, cách nhau bằng dấu phẩy<input id="tdCols" placeholder="Nội dung, Gói 1:1, Gói 1:2"></label>
+      <label>Các dòng: mỗi dòng một hàng, các ô cách nhau bằng dấu | (hoặc dán từ Excel)<textarea id="tdRows" rows="6" placeholder="Bảo lưu buổi | Có | Có"></textarea></label>
+      <div class="btns two"><button class="btn soft" id="tdCancel">Hủy</button><button class="btn dark" id="tdSave">Thêm bảng</button></div>
+    </div>
+  </dialog>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; 2026 BoboCoach</div>
+  </div>
+</footer>
+
+<script>
+/* ===== SỬA THÔNG TIN CỦA BẠN Ở ĐÂY ===== */
+const CONFIG = {
+  zalo: "https://zalo.me/0900000000",
+  facebook: "https://www.facebook.com/bobocoach",
+  instagram: "https://www.instagram.com/bobocoach",
+  /* Nội dung coaching: đặt chữ giữa hai dấu * để tô màu nhấn. */
+  coaching: [
+    "Hướng dẫn chi tiết để *hiểu và thực hiện đúng kỹ thuật* các bài tập",
+    "*Chỉnh form* theo thể trạng từng cá nhân nhằm tối ưu hiệu quả tập luyện và hạn chế chấn thương",
+    "Xây dựng *giáo án tập luyện tăng tiến* và *meal plan* cá nhân hóa theo mục tiêu thực tế",
+    "*Tư vấn dinh dưỡng* phù hợp cho từng mục tiêu như tăng cơ, giảm mỡ hoặc cải thiện sức khỏe tổng thể",
+    "Hỗ trợ *cải thiện các vấn đề về tư thế, lệch cơ, đau mỏi* do thói quen sinh hoạt hoặc tính chất công việc",
+    "*Giãn cơ, giảm đau nhức* và tăng khả năng phục hồi trong quá trình tập luyện",
+    "Cung cấp *công cụ linh hoạt* giúp lựa chọn thực phẩm theo Macro thay vì phải ăn các món cố định",
+    "*Điều chỉnh lộ trình* theo tình trạng cơ thể hiện tại: giảm mỡ với người có body fat cao, tăng cơ hoặc tái cấu trúc cơ thể với người có body fat thấp",
+    "*Theo dõi tiến độ và tăng tiến* theo từng giai đoạn với mục tiêu rõ ràng được thể hiện trong kế hoạch tập luyện hằng tuần"
+  ],
+  path: [
+    { icon: "📅", text: "Gói tháng nhưng không giới hạn thời gian sử dụng" },
+    { icon: "📋", text: "Hoàn thành đủ số buổi trước khi chuyển sang gói tiếp theo" },
+    { icon: "🔄", text: "Buổi chưa sử dụng được bảo lưu và tiếp tục ở tháng sau" }
+  ],
+  /* Bảng thêm bằng nút "+ Thêm bảng" (mở trang với ?admin). Sau khi sao chép mã, dán thay toàn bộ khối extraTables này. */
+  extraTables: [
+    { title: "Nhóm 1:2", cols: ["Hạng mục", "Chi tiết"], rows: [
+      ["Hình thức", "1 PT : 2 học viên"],
+      ["Số buổi", "30 buổi"],
+      ["Học phí cả nhóm", "13.000.000đ"],
+      ["Giá mỗi buổi", "~217.000đ/người/buổi"],
+      ["Thời gian sử dụng", "Gói tháng, không giới hạn thời gian"],
+      ["Bảo lưu", "Buổi chưa dùng được bảo lưu sang tháng sau"]
+    ] }
+  ],
+  /* Bảng quyền lợi: cột là các gói ở mục packages (theo đúng thứ tự). Mỗi dòng gồm tên quyền lợi và
+     values cho từng gói: true = có (dấu ✓), false = không (dấu -), hoặc chữ như "12 buổi". */
+  benefits: [
+    { label: "Giáo án riêng theo mục tiêu", values: [true, true, true] },
+    { label: "Sửa form từng buổi", values: [true, false, true] },
+    { label: "Check form qua video", values: [false, true, false] },
+    { label: "Gợi ý thực đơn", values: [true, true, false] },
+    { label: "Nhắn tin hỏi đáp", values: ["Trong buổi tập", "Mỗi ngày", "Trong buổi tập"] },
+    { label: "Số buổi", values: ["12 buổi", "Theo tháng", "12 buổi"] }
+  ],
+  /* Mỗi thẻ: gender "nam"/"nu", cat "tangco"/"giammo", tối đa 4 ảnh ghép 2x2 (imgs),
+     note là dòng kết quả, name là tên. Ảnh để "" sẽ hiện ô trống. Ví dụ: "anh/a1.jpg" */
+  results: [
+    { gender: "nam", cat: "tangco", imgs: ["", "", "", ""], name: "Học viên A", note: "+5kg cơ sau 4 tháng" },
+    { gender: "nam", cat: "giammo", imgs: ["", "", "", ""], name: "Học viên B", note: "-8kg mỡ sau 3 tháng" },
+    { gender: "nam", cat: "tangco", imgs: ["", "", "", ""], name: "Học viên C", note: "+3kg cơ sau 3 tháng" },
+    { gender: "nam", cat: "giammo", imgs: ["", "", "", ""], name: "Học viên D", note: "-6kg mỡ sau 2 tháng" },
+    { gender: "nam", cat: "tangco", imgs: ["", "", "", ""], name: "Học viên E", note: "+4kg cơ sau 4 tháng" },
+    { gender: "nu", cat: "giammo", imgs: ["", "", "", ""], name: "Học viên F", note: "-6kg mỡ sau 2 tháng" },
+    { gender: "nu", cat: "tangco", imgs: ["", "", "", ""], name: "Học viên G", note: "+2kg cơ sau 3 tháng" },
+    { gender: "nu", cat: "giammo", imgs: ["", "", "", ""], name: "Học viên H", note: "-5kg mỡ sau 2 tháng" }
+  ],
+  packages: [
+    { name: "PT 1-1 tại phòng tập", price: "2.400.000đ", per: "/ 12 buổi", hot: true,
+      perks: ["Giáo án riêng theo mục tiêu", "Sửa form từng động tác", "Gợi ý thực đơn cơ bản"] },
+    { name: "Coaching online", price: "1.200.000đ", per: "/ tháng",
+      perks: ["Lên giáo án hằng tuần", "Check form qua video", "Nhắn tin hỏi đáp mỗi ngày"] },
+    { name: "Nhóm nhỏ 3-4 người", price: "1.500.000đ", per: "/ 12 buổi",
+      perks: ["Tập chung, giá mềm hơn", "Có bạn tập cùng, dễ duy trì"] }
+  ]
+};
+/* ======================================== */
+document.getElementById("zalo").href=CONFIG.zalo;
+document.getElementById("fb").href=CONFIG.facebook;
+document.getElementById("ig").href=CONFIG.instagram;
+document.getElementById("packs").innerHTML=CONFIG.packages.map(p=>`
+  <article class="pk${p.hot?" hot":""}">
+    <h3>${p.name}</h3>
+    <div class="price">${p.price} <small>${p.per}</small></div>
+    <ul>${p.perks.map(x=>`<li>${x}</li>`).join("")}</ul>
+    <a class="btn main" href="${CONFIG.zalo}">Đăng ký gói này</a>
+  </article>`).join("");
+
+const cell=v=>v===true?'<span class="yes" aria-label="Có">✓</span>':v===false||v==null||v===""?'<span class="no" aria-label="Không">-</span>':v;
+document.getElementById("bt").innerHTML=
+  `<thead><tr><th scope="col">Quyền lợi</th>${CONFIG.packages.map(p=>`<th scope="col">${p.name}</th>`).join("")}</tr></thead>`+
+  `<tbody>${CONFIG.benefits.map(r=>`<tr><th scope="row">${r.label}</th>${CONFIG.packages.map((p,i)=>`<td>${cell(r.values[i])}</td>`).join("")}</tr>`).join("")}</tbody>`;
+
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const hl=s=>esc(s).replace(/\*(.+?)\*/g,"<em>$1</em>");
+document.getElementById("inc").innerHTML=CONFIG.coaching.map(t=>`<li><span>${hl(t)}</span></li>`).join("");
+document.getElementById("path").innerHTML=CONFIG.path.map(p=>`<div><span aria-hidden="true">${p.icon}</span><p>${esc(p.text)}</p></div>`).join("");
+
+const admin=new URLSearchParams(location.search).has("admin");
+let drafts=[];
+try{drafts=JSON.parse(localStorage.getItem("bobo_tables")||"[]")}catch(e){}
+const saveDrafts=()=>{try{localStorage.setItem("bobo_tables",JSON.stringify(drafts))}catch(e){}};
+const xtable=(t,i,draft)=>`<div class="xt"><div class="xt-head"><h3>${esc(t.title)}${draft?' <span class="draft">Bản nháp</span>':""}</h3>${draft?`<button class="del" data-i="${i}">Xóa</button>`:""}</div><div class="bt-wrap"><table class="bt"><thead><tr>${t.cols.map(c=>`<th scope="col">${esc(c)}</th>`).join("")}</tr></thead><tbody>${t.rows.map(r=>`<tr>${t.cols.map((_,j)=>j?`<td>${esc(r[j]||"")}</td>`:`<th scope="row">${esc(r[0]||"")}</th>`).join("")}</tr>`).join("")}</tbody></table></div></div>`;
+function drawExtras(){
+  document.getElementById("extras").innerHTML=CONFIG.extraTables.map((t,i)=>xtable(t,i,false)).join("")+(admin?drafts.map((t,i)=>xtable(t,i,true)).join(""):"");
+}
+if(admin){
+  const td=document.getElementById("td"),$=id=>document.getElementById(id);
+  $("adminbar").hidden=false;
+  $("addTable").onclick=()=>td.showModal();
+  $("tdCancel").onclick=()=>td.close();
+  $("tdSave").onclick=()=>{
+    const title=$("tdTitle").value.trim()||"Bảng mới";
+    const cols=$("tdCols").value.split(",").map(x=>x.trim()).filter(Boolean);
+    const rows=$("tdRows").value.split("\n").map(l=>l.split(/\t|\|/).map(x=>x.trim())).filter(r=>r.some(Boolean));
+    if(!cols.length){alert("Nhập tên các cột, cách nhau bằng dấu phẩy.");return}
+    drafts.push({title,cols,rows});saveDrafts();drawExtras();td.close();
+    ["tdTitle","tdCols","tdRows"].forEach(id=>$(id).value="");
+  };
+  $("extras").addEventListener("click",e=>{const b=e.target.closest(".del");if(!b)return;drafts.splice(+b.dataset.i,1);saveDrafts();drawExtras()});
+  $("copyCode").onclick=async()=>{
+    const code="extraTables: "+JSON.stringify(CONFIG.extraTables.concat(drafts),null,2)+",";
+    try{await navigator.clipboard.writeText(code);alert("Đã sao chép. Thay khối extraTables trong index.html bằng mã này.")}catch(e){prompt("Sao chép mã này:",code)}
+  };
+}
+drawExtras();
+
+const titles={all:"Tất cả",tangco:"Tăng cơ",giammo:"Giảm mỡ"};
+const gNames={nam:"Nam",nu:"Nữ"};
+let gender="nam",curTab="all";
+function show(tab){
+  curTab=tab;
+  document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===tab));
+  document.querySelectorAll(".g").forEach(b=>b.setAttribute("aria-selected",b.dataset.g===gender));
+  const fee=tab==="hocphi";
+  document.getElementById("fees").hidden=!fee;
+  document.getElementById("results").hidden=fee;
+  document.getElementById("gender").hidden=fee;
+  if(fee)return;
+  document.getElementById("res-title").textContent=gNames[gender]+": "+titles[tab];
+  const list=CONFIG.results.filter(r=>r.gender===gender&&(tab==="all"||r.cat===tab));
+  document.getElementById("res").innerHTML=list.map(r=>`
+    <article class="fcard">
+      <div class="collage">${[0,1,2,3].map(j=>{const u=(r.imgs||[])[j];return u
+        ?`<button data-src="${u}" aria-label="Xem ảnh ${j+1} của ${r.name}"><img src="${u}" alt="${r.name}" loading="lazy"></button>`
+        :`<div class="empty"></div>`}).join("")}</div>
+      <div class="cap"><b>${r.note}</b><small>${r.name}</small></div>
+    </article>`).join("")||"<p class='sub'>Chưa có ảnh ở mục này.</p>";
+}
+document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>show(b.dataset.tab)));
+document.querySelectorAll(".g").forEach(b=>b.addEventListener("click",()=>{gender=b.dataset.g;show(curTab)}));
+const lb=document.getElementById("lb");
+document.getElementById("res").addEventListener("click",e=>{
+  const b=e.target.closest("button[data-src]");
+  if(!b)return;
+  lb.querySelector("img").src=b.dataset.src;
+  lb.showModal();
+});
+lb.addEventListener("click",()=>lb.close());
+show("all");
+</script>
+</body>
+</html>

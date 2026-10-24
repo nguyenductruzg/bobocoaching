@@ -115,114 +115,301 @@
     ],
     "nu": [
       {
-        "t": "Tiêu đề khách hàng 1",
-        "n": "Ghi chú ngắn (kết quả, thời gian tập...)",
+        "t": "Client 1",
+        "n": "2 tháng tập luyện, giảm mỡ, tăng cơ",
         "g": [
           "tangco",
-          "giammo",
-          "tuthe"
-        ],
-        "imgs": [
-          "images/nu-1a.jpg",
-          "images/nu-1b.jpg"
-        ]
-      },
-      {
-        "t": "Tiêu đề khách hàng 2",
-        "n": "Ghi chú ngắn (kết quả, thời gian tập...)",
-        "g": [
           "giammo"
         ],
         "imgs": [
-          "images/nu-2a.jpg",
-          "images/nu-2b.jpg"
+          "images/c/nu-1792859831563-0.jpg"
         ]
       },
       {
-        "t": "Tiêu đề khách hàng 3",
-        "n": "Ghi chú ngắn (kết quả, thời gian tập...)",
+        "t": "Client 2",
+        "n": "Giảm mỡ, tăng cơ, chỉnh dáng",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792859995127-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 3",
+        "n": "Tăng cơ, up size mông",
         "g": [
           "tangco"
         ],
         "imgs": [
-          "images/nu-3a.jpg",
-          "images/nu-3b.jpg"
+          "images/c/nu-1792860046460-1.jpg"
         ]
       },
       {
-        "t": "Tiêu đề khách hàng 4",
-        "n": "Ghi chú ngắn (kết quả, thời gian tập...)",
-        "g": [
-          "tangco",
-          "giammo",
-          "tuthe"
-        ],
-        "imgs": [
-          "images/nu-4.jpg"
-        ]
-      },
-      {
-        "t": "Tiêu đề khách hàng 5",
-        "n": "Ghi chú ngắn (kết quả, thời gian tập...)",
-        "g": [
-          "tangco"
-        ],
-        "imgs": [
-          "images/nu-5.jpg"
-        ]
-      },
-      {
-        "t": "Tiêu đề khách hàng 6",
-        "n": "Ghi chú ngắn (kết quả, thời gian tập...)",
+        "t": "Client 4",
+        "n": "Giảm mỡ",
         "g": [
           "giammo"
         ],
         "imgs": [
-          "images/nu-6.jpg"
+          "images/c/nu-1792860171894-1.jpg"
         ]
       },
       {
-        "t": "Tiêu đề khách hàng 7",
-        "n": "Ghi chú ngắn (kết quả, thời gian tập...)",
-        "g": [
-          "tangco",
-          "giammo",
-          "tuthe"
-        ],
-        "imgs": [
-          "images/nu-7.jpg"
-        ]
-      },
-      {
-        "t": "Tiêu đề khách hàng 8",
-        "n": "Ghi chú ngắn (kết quả, thời gian tập...)",
-        "g": [
-          "giammo"
-        ],
-        "imgs": [
-          "images/nu-8.jpg"
-        ]
-      },
-      {
-        "t": "Tiêu đề khách hàng 9",
-        "n": "Ghi chú ngắn (kết quả, thời gian tập...)",
+        "t": "Client 5",
+        "n": "Tăng cơ, chỉnh dáng",
         "g": [
           "tangco"
         ],
         "imgs": [
-          "images/nu-9.jpg"
+          "images/c/nu-1792860237670-1.jpg"
         ]
       },
       {
-        "t": "Tiêu đề khách hàng 10",
-        "n": "Ghi chú ngắn (kết quả, thời gian tập...)",
+        "t": "Client 6",
+        "n": "Giảm mỡ",
+        "g": [
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860422753-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 7",
+        "n": "Giảm mỡ, tăng cơ, chỉnh dáng, fix cột sống",
         "g": [
           "tangco",
           "giammo",
           "tuthe"
         ],
         "imgs": [
-          "images/nu-10.jpg"
+          "images/c/nu-1792860433907-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 8",
+        "n": "Tăng cơ, giảm mỡ, recomposition",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860479688-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 9",
+        "n": "Tăng cơ, giảm mỡ, up size",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860540766-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 10",
+        "n": "Giảm mỡ, chỉnh dáng",
+        "g": [
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860581041-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 11",
+        "n": "Giảm mỡ, chỉnh dáng",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860607666-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 12",
+        "n": "Giảm mỡ",
+        "g": [
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860632409-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 13",
+        "n": "Giảm mỡ, tăng cơ, chỉnh dáng",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860654535-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 14",
+        "n": "Giảm mỡ, tăng cơ",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860676634-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 15",
+        "n": "Giảm mỡ",
+        "g": [
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860688546-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 16",
+        "n": "Tăng cơ, giảm mỡ, up size",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860701430-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 17",
+        "n": "Tăng cơ, up size",
+        "g": [
+          "tangco"
+        ],
+        "imgs": [
+          "images/c/nu-1792860724608-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 18",
+        "n": "Tăng cơ, up size",
+        "g": [
+          "tangco"
+        ],
+        "imgs": [
+          "images/c/nu-1792860742918-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 19",
+        "n": "Tăng cơ, giảm mỡ",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860753908-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 20",
+        "n": "Tăng cơ, giảm mỡ",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860765169-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 21 (Pcos)",
+        "n": "Tăng cơ, giảm mỡ",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860790010-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 21",
+        "n": "Tăng cơ, giảm mỡ, up size",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860824890-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 22",
+        "n": "Tăng cơ, giảm mỡ",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860844299-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 23",
+        "n": "Fix form",
+        "g": [
+          "tuthe"
+        ],
+        "imgs": [
+          "images/c/nu-1792860902553-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 24",
+        "n": "Cải thiện bàn chân bẹt",
+        "g": [
+          "tuthe"
+        ],
+        "imgs": [
+          "images/c/nu-1792860928379-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 25",
+        "n": "Tăng cơ, giảm mỡ",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792860991997-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 26",
+        "n": "Tăng cơ, giảm mỡ",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792861004897-1.jpg"
+        ]
+      },
+      {
+        "t": "Client 27",
+        "n": "Tăng cơ, giảm mỡ",
+        "g": [
+          "tangco",
+          "giammo"
+        ],
+        "imgs": [
+          "images/c/nu-1792861045621-1.jpg"
         ]
       }
     ]

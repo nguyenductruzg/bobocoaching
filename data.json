@@ -34,17 +34,6 @@
       },
       {
         "t": "Client 4",
-        "n": "Giảm mữ, tăng cơ, up size",
-        "g": [
-          "tangco",
-          "giammo"
-        ],
-        "imgs": [
-          "images/c/nam-1792861861565-1.jpg"
-        ]
-      },
-      {
-        "t": "Client 5",
         "n": "Tăng cơ, up size",
         "g": [
           "tangco"
@@ -54,7 +43,7 @@
         ]
       },
       {
-        "t": "Client 6",
+        "t": "Client 5",
         "n": "Giảm mỡ",
         "g": [
           "giammo"
@@ -64,35 +53,13 @@
         ]
       },
       {
-        "t": "Client 7",
+        "t": "Client 6",
         "n": "Tăng cơ",
         "g": [
           "tangco"
         ],
         "imgs": [
           "images/c/nam-1792861973892-1.jpg"
-        ]
-      },
-      {
-        "t": "Client 8",
-        "n": "Tăng cơ, giảm mỡ",
-        "g": [
-          "tangco",
-          "giammo"
-        ],
-        "imgs": [
-          "images/c/nam-1792861999917-1.jpg"
-        ]
-      },
-      {
-        "t": "Client 9",
-        "n": "Tăng cơ, giảm mỡ",
-        "g": [
-          "tangco",
-          "giammo"
-        ],
-        "imgs": [
-          "images/c/nam-1792862012170-1.jpg"
         ]
       },
       {

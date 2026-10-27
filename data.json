@@ -832,6 +832,35 @@
         "cats": [
           "big3"
         ]
+      },
+      {
+        "t": "Sumo Deadlift",
+        "u": "https://youtube.com/shorts/FOiZpmoe-r0?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "Halfting Deadlift",
+        "u": "https://youtube.com/shorts/ehRc9E7oPfk?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "Romania Deadlift",
+        "u": "https://youtube.com/shorts/9MDQBwQD6rw?feature=share",
+        "cats": [
+          "mong"
+        ]
+      },
+      {
+        "t": "Romania Deadlift (BB)",
+        "u": "https://youtube.com/shorts/TSlBQuRm1K4?feature=share",
+        "cats": [
+          "compound",
+          "mong"
+        ]
       }
     ],
     "fix": [
@@ -924,6 +953,10 @@
       [
         "compound",
         "Compound"
+      ],
+      [
+        "mong",
+        "Mông"
       ],
       [
         "nguc",

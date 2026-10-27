@@ -599,12 +599,75 @@
           "t": "Tiêu đề bài viết 4",
           "u": "https://facebook.com/"
         }
+      ],
+      "micro": [],
+      "macro": [
+        {
+          "t": "Lời nói đầu về Macro(Carb, Protein, Fat)",
+          "u": "https://www.facebook.com/share/p/1CGWq5eDW9/",
+          "cats": []
+        },
+        {
+          "t": "Carb (Phần 1)",
+          "u": "https://www.facebook.com/share/p/1J7thZPsfr/",
+          "cats": []
+        },
+        {
+          "t": "Carb (Phần 2)",
+          "u": "https://www.facebook.com/share/p/1cBCkBXK26/",
+          "cats": []
+        },
+        {
+          "t": "Carb (Phần 3)",
+          "u": "https://www.facebook.com/share/p/19azY1ob32/",
+          "cats": []
+        },
+        {
+          "t": "Carb (Phần 4)",
+          "u": "https://www.facebook.com/share/p/1FEHvk8XUM/",
+          "cats": []
+        },
+        {
+          "t": "Carb (Phần 5)",
+          "u": "https://www.facebook.com/share/p/1BfRGuNNnt/",
+          "cats": []
+        },
+        {
+          "t": "Carb (Phần 6)",
+          "u": "https://www.facebook.com/share/p/1Sng7hZNqx/",
+          "cats": []
+        },
+        {
+          "t": "Carb (Phần 7)",
+          "u": "https://www.facebook.com/share/p/1JEBr1kJcV/",
+          "cats": []
+        },
+        {
+          "t": "Carb (Phần 8)",
+          "u": "https://www.facebook.com/share/p/1E7TAp8jGE/",
+          "cats": []
+        },
+        {
+          "t": "Carb (Phần 9)",
+          "u": "https://www.facebook.com/share/p/1JiLuTvBRu/",
+          "cats": []
+        },
+        {
+          "t": "Carb (Phần 10)",
+          "u": "https://www.facebook.com/share/p/1A1WmMtixG/",
+          "cats": []
+        },
+        {
+          "t": "Fat (Phần 1)",
+          "u": "https://www.facebook.com/share/p/1E216TnwqW/",
+          "cats": []
+        }
       ]
     },
     "video": [
       {
-        "t": "Tiêu đề video bài tập 1",
-        "u": "https://youtube.com/",
+        "t": "10 bước squat",
+        "u": "https://youtube.com/shorts/5MlD1Nwis3w?feature=share",
         "cats": [
           "big3"
         ]
@@ -666,8 +729,8 @@
         ]
       },
       {
-        "t": "Tiêu đề video bài tập 10",
-        "u": "https://youtube.com/",
+        "t": "Squat Setup",
+        "u": "https://youtube.com/shorts/sIgWXlPmevQ?feature=share",
         "cats": [
           "big3"
         ]
@@ -698,6 +761,76 @@
         "u": "https://youtube.com/",
         "cats": [
           "lung"
+        ]
+      },
+      {
+        "t": "Squat Setupp",
+        "u": "https://youtube.com/shorts/pZuJIKF6B-M?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "Squat Setuppp",
+        "u": "https://youtube.com/shorts/hxotcHxdtos?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "Thực hiện Squat",
+        "u": "https://youtube.com/shorts/ypvQpemcgrg?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "How to Squat ryanpricelifts",
+        "u": "https://youtube.com/shorts/F2vtHK2uQDY?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "Chỉnh pelvis ở bài Squat",
+        "u": "https://youtube.com/shorts/JzBtpa4QDd0?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "Chỉnh lại chậu trong lúc đang Squat",
+        "u": "https://youtube.com/shorts/h54fp7nUW6M?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "Chỉnh lại chậu trong lúc đang Squatt",
+        "u": "https://youtube.com/shorts/w7o73GqeRM8?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "5 Key Squat",
+        "u": "https://youtube.com/shorts/AlmFA5b7zF4?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "Bench Press",
+        "u": "https://youtube.com/shorts/eBWSyoyyAI8?feature=share",
+        "cats": [
+          "big3"
+        ]
+      },
+      {
+        "t": "Cách lấy tạ ra khỏi Rack",
+        "u": "https://youtube.com/shorts/U6Z73Iy6P_A?feature=share",
+        "cats": [
+          "big3"
         ]
       }
     ],
@@ -751,5 +884,90 @@
         "u": "https://youtube.com/"
       }
     ]
+  },
+  "cfg": {
+    "theory": [
+      [
+        "101",
+        "Micronutrition"
+      ],
+      [
+        "macro",
+        "Macronutrition"
+      ],
+      [
+        "micro",
+        "101"
+      ],
+      [
+        "102",
+        "102"
+      ],
+      [
+        "103",
+        "103"
+      ],
+      [
+        "giaingo",
+        "Giải ngố"
+      ],
+      [
+        "science",
+        "Science Based"
+      ]
+    ],
+    "cats": [
+      [
+        "big3",
+        "Big 3 (SBD)"
+      ],
+      [
+        "compound",
+        "Compound"
+      ],
+      [
+        "nguc",
+        "Ngực"
+      ],
+      [
+        "vai",
+        "Vai"
+      ],
+      [
+        "lung",
+        "Lưng"
+      ],
+      [
+        "tay",
+        "Tay"
+      ],
+      [
+        "chan",
+        "Chân"
+      ],
+      [
+        "kickback",
+        "Kickback"
+      ],
+      [
+        "bung",
+        "Bụng"
+      ]
+    ],
+    "prac": [
+      [
+        "video",
+        "Video bài tập"
+      ],
+      [
+        "fix",
+        "Fix sai lệch"
+      ]
+    ]
+  },
+  "anime": {
+    "hay": [],
+    "nam": [],
+    "nu": []
   }
 }

@@ -908,62 +908,6 @@
         ]
       },
       {
-        "t": "Tiêu đề video bài tập 2",
-        "u": "https://youtube.com/",
-        "cats": [
-          "compound"
-        ]
-      },
-      {
-        "t": "Tiêu đề video bài tập 3",
-        "u": "https://youtube.com/",
-        "cats": [
-          "nguc"
-        ]
-      },
-      {
-        "t": "Tiêu đề video bài tập 4",
-        "u": "https://youtube.com/",
-        "cats": [
-          "vai"
-        ]
-      },
-      {
-        "t": "Tiêu đề video bài tập 5",
-        "u": "https://youtube.com/",
-        "cats": [
-          "lung"
-        ]
-      },
-      {
-        "t": "Tiêu đề video bài tập 6",
-        "u": "https://youtube.com/",
-        "cats": [
-          "tay"
-        ]
-      },
-      {
-        "t": "Tiêu đề video bài tập 7",
-        "u": "https://youtube.com/",
-        "cats": [
-          "chan"
-        ]
-      },
-      {
-        "t": "Tiêu đề video bài tập 8",
-        "u": "https://youtube.com/",
-        "cats": [
-          "kickback"
-        ]
-      },
-      {
-        "t": "Tiêu đề video bài tập 9",
-        "u": "https://youtube.com/",
-        "cats": [
-          "bung"
-        ]
-      },
-      {
         "t": "Squat Setup",
         "u": "https://youtube.com/shorts/sIgWXlPmevQ?feature=share",
         "cats": [
@@ -971,31 +915,11 @@
         ]
       },
       {
-        "t": "Tiêu đề video bài tập 11",
-        "u": "https://youtube.com/",
+        "t": "RDL Setup",
+        "u": "https://youtube.com/shorts/9MDQBwQD6rw?feature=share",
         "cats": [
-          "compound"
-        ]
-      },
-      {
-        "t": "Tiêu đề video bài tập 12",
-        "u": "https://youtube.com/",
-        "cats": [
-          "nguc"
-        ]
-      },
-      {
-        "t": "Tiêu đề video bài tập 13",
-        "u": "https://youtube.com/",
-        "cats": [
-          "vai"
-        ]
-      },
-      {
-        "t": "Tiêu đề video bài tập 14",
-        "u": "https://youtube.com/",
-        "cats": [
-          "lung"
+          "compound",
+          "mong"
         ]
       },
       {
@@ -1069,13 +993,6 @@
         ]
       },
       {
-        "t": "RDL",
-        "u": "https://youtube.com/shorts/9MDQBwQD6rw?feature=share",
-        "cats": [
-          "mong"
-        ]
-      },
-      {
         "t": "RDL (BB)",
         "u": "https://youtube.com/shorts/TSlBQuRm1K4?feature=share",
         "cats": [
@@ -1102,6 +1019,48 @@
         "u": "https://youtube.com/shorts/e8CNxe6sEDY?feature=share",
         "cats": [
           "mong"
+        ]
+      },
+      {
+        "t": "Seated DB Complete",
+        "u": "https://youtube.com/shorts/hTqmvtH2pho?feature=share",
+        "cats": [
+          "vai"
+        ]
+      },
+      {
+        "t": "DB Bench press",
+        "u": "https://youtube.com/shorts/YoUFxcac6CU?feature=share",
+        "cats": [
+          "nguc"
+        ]
+      },
+      {
+        "t": "Db  Bench Presss",
+        "u": "https://youtube.com/shorts/12dvkC1cTu4?feature=share",
+        "cats": [
+          "nguc"
+        ]
+      },
+      {
+        "t": "Bulgarian Split Squat",
+        "u": "https://youtube.com/shorts/Hb_3mhW4gP8?feature=share",
+        "cats": [
+          "mong"
+        ]
+      },
+      {
+        "t": "Split Squat",
+        "u": "https://youtube.com/shorts/ODdrrkpym6Y?feature=share",
+        "cats": [
+          "mong"
+        ]
+      },
+      {
+        "t": "Hyper Extension (focus Lưng)",
+        "u": "https://youtube.com/shorts/nzPpaiE9gw0?feature=share",
+        "cats": [
+          "lung"
         ]
       }
     ],

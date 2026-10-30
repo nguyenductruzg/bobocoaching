@@ -1074,6 +1074,7 @@
         "t": "Straight Arm Lat Pulldown",
         "u": "https://youtube.com/shorts/RiCXYG0kc98?feature=share",
         "cats": [
+          "warm-up",
           "lung"
         ]
       },
@@ -1411,6 +1412,34 @@
         "cats": [
           "lung"
         ]
+      },
+      {
+        "t": "Cat And Cow",
+        "u": "https://youtube.com/shorts/LkNPEjh1Yrg",
+        "cats": [
+          "warm-up"
+        ]
+      },
+      {
+        "t": "Wide Grip Cable Row",
+        "u": "https://youtube.com/shorts/joPxPFkfgJ0",
+        "cats": [
+          "lung"
+        ]
+      },
+      {
+        "t": "Close Grip Cable Row",
+        "u": "https://youtube.com/shorts/UZHjMEPwQ5g",
+        "cats": [
+          "lung"
+        ]
+      },
+      {
+        "t": "Leg Extension",
+        "u": "https://youtube.com/shorts/IqWwdGrIy6o",
+        "cats": [
+          "chan"
+        ]
       }
     ],
     "fix": [
@@ -1462,7 +1491,8 @@
         "t": "Tiêu đề fix sai lệch 12",
         "u": "https://youtube.com/"
       }
-    ]
+    ],
+    "ngo": []
   },
   "cfg": {
     "theory": [
@@ -1500,6 +1530,10 @@
       ]
     ],
     "cats": [
+      [
+        "warm-up",
+        "WU"
+      ],
       [
         "big3",
         "Big 3 (SBD)"
@@ -1549,6 +1583,10 @@
       [
         "fix",
         "Fix sai lệch"
+      ],
+      [
+        "ngo",
+        "Giải ngố"
       ]
     ]
   },

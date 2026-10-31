@@ -1461,6 +1461,13 @@
         "cats": [
           "mong"
         ]
+      },
+      {
+        "t": "Giãn Lưng Dưới",
+        "u": "https://youtu.be/Nf-EfxhZ9bQ",
+        "cats": [
+          "gian-co"
+        ]
       }
     ],
     "fix": [
@@ -1594,6 +1601,10 @@
       [
         "bung",
         "Bụng"
+      ],
+      [
+        "gian-co",
+        "Giãn Cơ"
       ]
     ],
     "prac": [

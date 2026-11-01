@@ -911,6 +911,13 @@
         "cats": [
           "macro"
         ]
+      },
+      {
+        "t": "Protein (Phần cuối)",
+        "u": "https://www.facebook.com/share/p/18b4RJxL2k/",
+        "cats": [
+          "macro"
+        ]
       }
     ],
     "video": [
@@ -1531,6 +1538,10 @@
       [
         "macro",
         "Macronutrition"
+      ],
+      [
+        "supplements",
+        "Supplements"
       ],
       [
         "micro",

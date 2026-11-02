@@ -1507,6 +1507,76 @@
           "big3",
           "mong"
         ]
+      },
+      {
+        "t": "Các bài tập ngực",
+        "u": "https://www.youtube.com/playlist?list=PLuCfiJ5Wl3Jsj0eqqeDoeIz8Jc7BM6N4I",
+        "cats": [
+          "swequity-kenh-khac-huong-dan-chi-tiet"
+        ]
+      },
+      {
+        "t": "Các bài tập lưng",
+        "u": "https://www.youtube.com/playlist?list=PLuCfiJ5Wl3JvtPBNS_DXWeke-pryDpCdH",
+        "cats": [
+          "swequity-kenh-khac-huong-dan-chi-tiet"
+        ]
+      },
+      {
+        "t": "Các bài tập đùi trước",
+        "u": "https://www.youtube.com/playlist?list=PLuCfiJ5Wl3JvM3rRyld7OGtZTzWpCQG87",
+        "cats": [
+          "swequity-kenh-khac-huong-dan-chi-tiet"
+        ]
+      },
+      {
+        "t": "Các bài tập mông",
+        "u": "https://www.youtube.com/playlist?list=PLuCfiJ5Wl3JuPWtM9lR1mB30vRR9CvWzZ",
+        "cats": [
+          "swequity-kenh-khac-huong-dan-chi-tiet"
+        ]
+      },
+      {
+        "t": "Các bài tập vai",
+        "u": "https://www.youtube.com/playlist?list=PLuCfiJ5Wl3JsRV97jz6zL2xeSuJErOBAi",
+        "cats": [
+          "swequity-kenh-khac-huong-dan-chi-tiet"
+        ]
+      },
+      {
+        "t": "Các bài tập tay",
+        "u": "https://www.youtube.com/playlist?list=PLuCfiJ5Wl3JsybzWSe_uameIY0pNIy1ZT",
+        "cats": [
+          "swequity-kenh-khac-huong-dan-chi-tiet"
+        ]
+      },
+      {
+        "t": "Các bài tập chân",
+        "u": "https://www.youtube.com/playlist?list=PLuCfiJ5Wl3Jt2gEXp3oD1fWrq7FueTxEJ",
+        "cats": [
+          "swequity-kenh-khac-huong-dan-chi-tiet"
+        ]
+      },
+      {
+        "t": "Các bài tập đùi sau",
+        "u": "https://www.youtube.com/playlist?list=PLuCfiJ5Wl3JuRRhLbUTRCHrqV7lJ8a2Ke",
+        "cats": [
+          "swequity-kenh-khac-huong-dan-chi-tiet"
+        ]
+      },
+      {
+        "t": "Các bài tập bụng",
+        "u": "https://www.youtube.com/playlist?list=PLuCfiJ5Wl3Ju7GWLz8SsgQOy3amKOn-IU",
+        "cats": [
+          "swequity-kenh-khac-huong-dan-chi-tiet"
+        ]
+      },
+      {
+        "t": "Các bài tập bắp chân",
+        "u": "https://www.youtube.com/playlist?list=PLuCfiJ5Wl3JuEw3xZFktG8Ax-yMFZlYS5",
+        "cats": [
+          "swequity-kenh-khac-huong-dan-chi-tiet"
+        ]
       }
     ],
     "fix": [
@@ -1648,6 +1718,10 @@
       [
         "gian-co",
         "Giãn Cơ"
+      ],
+      [
+        "swequity-kenh-khac-huong-dan-chi-tiet",
+        "Swequity (kênh khác, hướng dẫn chi tiết)"
       ]
     ],
     "prac": [

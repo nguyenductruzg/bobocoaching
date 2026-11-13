@@ -1985,7 +1985,21 @@
       "theory:giaingo": [],
       "theory:science": [],
       "theory:client-an-chay-can-doc": []
-    }
+    },
+    "albums": [
+      [
+        "hay",
+        "Thấy hay"
+      ],
+      [
+        "nam",
+        "Nam"
+      ],
+      [
+        "nu",
+        "Nữ"
+      ]
+    ]
   },
   "anime": {
     "hay": [],

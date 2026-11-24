@@ -1924,6 +1924,10 @@
       [
         "client-an-chay-can-doc",
         "Client Ăn Chay Cần Đọc"
+      ],
+      [
+        "a",
+        "a"
       ]
     ],
     "prac": [
@@ -2040,7 +2044,8 @@
       "theory:103": [],
       "theory:giaingo": [],
       "theory:science": [],
-      "theory:client-an-chay-can-doc": []
+      "theory:client-an-chay-can-doc": [],
+      "theory:a": []
     },
     "albums": [
       [
